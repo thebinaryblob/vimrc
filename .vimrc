@@ -41,6 +41,7 @@ filetype plugin indent on    " required
 " => Menu and search related
 " => Many settings taken from https://github.com/amix/vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set ruler
 set smartcase               " When searching try to be smart about cases
 set wildmenu                " Turn on the WiLd menu
 
@@ -104,6 +105,21 @@ set number         " show current line number
 set relativenumber " show relative line numbers
 set showcmd        " show command in bottom bar
 set cursorline     " highlight current line
+
+
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Movement
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+nnoremap j gj
+nnoremap k gk
 
 
 
