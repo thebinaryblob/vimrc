@@ -18,6 +18,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'tpope/vim-surround'
 
 " Color related plugins
 Plugin 'altercation/vim-colors-solarized'
