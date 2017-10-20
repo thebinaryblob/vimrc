@@ -26,7 +26,8 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'sjl/badwolf'
 
 " Syntac completion
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'w0rp/ale'
 
 
 " All of your Plugins must be added before the following line
