@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'tpope/vim-commentary'
+Plugin 'Konfekt/FastFold'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
@@ -63,18 +64,16 @@ let python_highlight_all=1
 syntax on
 
 let g:solarized_termcolors=256
-set background=dark
+set background=light
 colorscheme solarized
-
-" Alternative color scheme
 " colors zenburn
 " colorscheme badwolf
 
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+" if has('gui_running')
+"     set background=light
+" else
+"     set background=dark
+" endif
 
 
 
@@ -144,15 +143,19 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 " JavaScript
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2
 
-
-
-
-
+" C
+au BufNewFile,BufRead *.c,*.h
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set foldmethod=syntax
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Configure for installed plugins
