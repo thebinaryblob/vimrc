@@ -20,6 +20,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'tpope/vim-surround'
 
+" Status bar
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " Color related plugins
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jnurmine/Zenburn'
@@ -65,17 +69,16 @@ syntax on
 
 let g:solarized_termcolors=256
 set background=light
-colorscheme solarized
 " colors zenburn
 " colorscheme badwolf
+colorscheme solarized
 
 " if has('gui_running')
 "     set background=light
 " else
 "     set background=dark
 " endif
-
-
+"
 
 
 
@@ -103,11 +106,18 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 set number         " show current line number
 set relativenumber " show relative line numbers
-set showcmd        " show command in bottom bar
 set cursorline     " highlight current line
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Status bar related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set showcmd         " show command in bottom bar
+set noshowmode      " Do not show the default node indicator
 
+" Display spelling settings
+let g:airline_detect_spell=1
+let g:airline_detect_spelllang=1
 
 
 
